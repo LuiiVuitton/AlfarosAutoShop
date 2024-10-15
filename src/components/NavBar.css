@@ -1,0 +1,16 @@
+/* NavBar.css */
+
+/* Optionally, change the color of the text (links) in the navbar */
+.navbar .nav-link {
+  color: black; /* White color for the links */
+}
+
+/* Change color of active nav link */
+.navbar .nav-link.active {
+  color: black; /* Customize this as needed */
+}
+
+/* Optionally add hover effects for the links */
+.navbar .nav-link:hover {
+  color: blue; /* Change this to your hover color */
+}
