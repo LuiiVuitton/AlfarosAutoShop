@@ -1,6 +1,8 @@
 import "../components/Home.css";
 import car from "../assets/images/CarTransparentBackground.png";
 import parallaxBackground1 from "../assets/images/bmw1.jpg"; // Import parallax background image
+import parallaxBackground2 from "../assets/images/fullDetail.jpg"; // Import parallax background image
+
 import service1 from "../assets/images/Car3.png";
 import service2 from "../assets/images/Car4.png";
 import service3 from "../assets/images/Car2.png";
@@ -12,42 +14,11 @@ import { FaCheck } from "react-icons/fa";
 
 import { FaStar } from "react-icons/fa";
 
+import { FaQuestion } from "react-icons/fa";
+
 function Home() {
   return (
     <>
-      {/* Hero Section */}
-      <section className="home-landing d-flex align-items-center">
-        <div className="container">
-          <div className="row">
-            {/* Text Column */}
-            <div className="col-md-6 text-left">
-              <h1 className="fade-in">
-                {" "}
-                Your trusted car detailing and dent repair experts.
-              </h1>
-              <p className="fade-in-delay fs-5">Located in Gaithersburg, MD</p>
-              <div className="btn-group fade-in-delay">
-                <a href="#contact" className="btn btn-primary">
-                  Contact us
-                </a>
-              </div>
-              <p className="fade-in-delay fs-6 pt-3">
-                Schedule a free consultation!
-              </p>
-            </div>
-
-            {/* Image Column */}
-            <div className="col-md-6 text-right">
-              <img
-                src={car}
-                alt="Car"
-                className="img-fluid car-image slide-in-right"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Parallax Call-to-Action Section */}
       <section
         className="parallax-section"
@@ -263,64 +234,114 @@ function Home() {
       <section className="faq-section py-5">
         <div className="container">
           <h2 className="text-center display-5 fw-bold">
-            Frequently Asked Questions
+            FAQ <FaQuestion />
           </h2>
-          <div className="row mt-4">
+          <div className="accordion mt-4" id="faqAccordion">
             {/* Question 1 */}
-            <div className="col-md-12">
-              <div className="card shadow-sm mb-3">
-                <div className="card-body">
-                  <h5 className="card-title">
-                    What is included in the basic detailing package?
-                  </h5>
-                  <p className="card-text">
-                    Our basic package includes an exterior wash and dry, wax
-                    application, tire cleaning and dressing, interior vacuuming,
-                    and window cleaning.
-                  </p>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingOne">
+                <button
+                  className="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is included in the basic detailing package?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Our basic package includes an exterior wash and dry, wax
+                  application, tire cleaning and dressing, interior vacuuming,
+                  and window cleaning.
                 </div>
               </div>
             </div>
+
             {/* Question 2 */}
-            <div className="col-md-12">
-              <div className="card shadow-sm mb-3">
-                <div className="card-body">
-                  <h5 className="card-title">
-                    How long does a full detail take?
-                  </h5>
-                  <p className="card-text">
-                    A full detail typically takes between 3 to 5 hours,
-                    depending on the size and condition of the vehicle.
-                  </p>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingTwo">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  How long does a full detail take?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  A full detail typically takes between 3 to 5 hours, depending
+                  on the size and condition of the vehicle.
                 </div>
               </div>
             </div>
+
             {/* Question 3 */}
-            <div className="col-md-12">
-              <div className="card shadow-sm mb-3">
-                <div className="card-body">
-                  <h5 className="card-title">
-                    Do you offer mobile detailing services?
-                  </h5>
-                  <p className="card-text">
-                    Yes, we offer mobile detailing services. We can come to your
-                    home or workplace for added convenience.
-                  </p>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingThree">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Do you offer mobile detailing services?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Yes, we offer mobile detailing services. We can come to your
+                  home or workplace for added convenience.
                 </div>
               </div>
             </div>
+
             {/* Question 4 */}
-            <div className="col-md-12">
-              <div className="card shadow-sm mb-3">
-                <div className="card-body">
-                  <h5 className="card-title">
-                    What is paintless dent repair (PDR)?
-                  </h5>
-                  <p className="card-text">
-                    Paintless dent repair (PDR) is a technique used to remove
-                    minor dents from the body of a car without damaging the
-                    paint.
-                  </p>
+            <div className="accordion-item">
+              <h2 className="accordion-header" id="headingFour">
+                <button
+                  className="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour"
+                  aria-expanded="false"
+                  aria-controls="collapseFour"
+                >
+                  What is paintless dent repair (PDR)?
+                </button>
+              </h2>
+              <div
+                id="collapseFour"
+                className="accordion-collapse collapse"
+                aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Paintless dent repair (PDR) is a technique used to remove
+                  minor dents from the body of a car without damaging the paint.
                 </div>
               </div>
             </div>
@@ -328,46 +349,50 @@ function Home() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="testimonials-section py-5">
+      {/* What is PDR Section */}
+      <section className="pdr-section py-5 bg-white">
         <div className="container">
-          <h2 className="text-center">What Our Clients Say</h2>
-          <div className="row">
-            <div className="col-md-6">
-              <blockquote className="blockquote">
-                <p>
-                  "Alfaros Auto Shop gave my car a brand new look! Great
-                  service!"
-                </p>
-                <footer className="blockquote-footer">John Doe</footer>
-              </blockquote>
+          <div className="row align-items-center mt-4">
+            {/* PDR Image */}
+            {/* Image Column */}
+            <div className="col-md-6 text-right">
+              <img
+                src={car}
+                alt="Car"
+                className="img-fluid car-image slide-in-right"
+              />
             </div>
+
+            {/* PDR Information */}
             <div className="col-md-6">
-              <blockquote className="blockquote">
-                <p>
-                  "Quick and professional dent repair service. Highly
-                  recommend."
-                </p>
-                <footer className="blockquote-footer">Jane Smith</footer>
-              </blockquote>
+              <h3 className="fw-bold">Paintless Dent Repair (PDR)</h3>
+              <p>
+                Paintless Dent Repair (PDR) is a method of removing minor dents
+                and dings from a vehicle's body without the need for traditional
+                body shop repairs like painting or using fillers. It is a highly
+                efficient process for maintaining the original factory finish of
+                your car while saving both time and money.
+              </p>
+              <ul className="list-group list-group-flush">
+                <li className="list-group-item">
+                  <FaCheck /> Fast and affordable
+                </li>
+                <li className="list-group-item">
+                  <FaCheck /> Preserves your vehicle’s original paint
+                </li>
+                <li className="list-group-item">
+                  <FaCheck /> Environmentally friendly with no need for
+                  chemicals or fillers
+                </li>
+                <li className="list-group-item">
+                  <FaCheck /> Ideal for minor dents, dings, and hail damage
+                </li>
+              </ul>
+              <a href="#contact" className="btn btn-primary mt-4">
+                Learn More
+              </a>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Parallax Call-to-Action Section */}
-      <section
-        className="parallax-section"
-        style={{
-          backgroundImage: `url(${parallaxBackground1})`,
-        }}
-      >
-        <div className="parallax-content text-center">
-          <h2>Quality You Can Trust</h2>
-          <p>Experience the best detailing and dent repair services today.</p>
-          <a href="#book" className="btn btn-primary btn-lg">
-            Book Now
-          </a>
         </div>
       </section>
 
