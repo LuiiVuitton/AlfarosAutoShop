@@ -1,7 +1,6 @@
 import "../components/Home.css";
 import car from "../assets/images/CarTransparentBackground.png";
 import parallaxBackground1 from "../assets/images/bmw1.jpg"; // Import parallax background image
-import parallaxBackground2 from "../assets/images/fullDetail.jpg"; // Import parallax background image
 
 import service1 from "../assets/images/Car3.png";
 import service2 from "../assets/images/Car4.png";
@@ -46,7 +45,7 @@ function Home() {
               </h2>
               <p style={{ fontSize: "1.2rem" }}>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-                commodi neque quis eligendi ducimus
+                commodi neque quis eligendi ducimus.davadvQVE
               </p>
               <p style={{ fontSize: "1.2rem" }}>Lorem ipsum dolor</p>
               <p
