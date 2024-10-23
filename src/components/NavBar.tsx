@@ -38,21 +38,21 @@ function NavBar({}) {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#About">
                 <FaUser />
                 {"    "}
                 About
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#Services">
                 <FaTools />
                 {"    "}
                 Services
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#Contact">
                 <IoIosMail />
                 {"    "}
                 Contact
@@ -70,7 +70,10 @@ function NavBar({}) {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a
+                    className="dropdown-item"
+                    href="https://www.instagram.com/gburgpdr/?igsh=eDIwMHhiZzA2dW53"
+                  >
                     <FaSquareInstagram />
                     {"    "}
                     Instagram
@@ -99,17 +102,6 @@ function NavBar({}) {
               </ul>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input
-              className="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button className="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
