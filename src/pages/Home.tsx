@@ -28,8 +28,11 @@ function Home() {
         >
           <div className="parallax-content text-center">
             <h2>Quality You Can Trust</h2>
-            <p>Experience the best detailing and dent repair services today.</p>
-            <a href="#book" className="btn btn-primary btn-lg">
+            <p>Experience the best detailing and dent repair services.</p>
+            <a
+              href="mailto:lventura@alfarosautoshop.com"
+              className="btn btn-primary btn-lg"
+            >
               Book Now
             </a>
           </div>
@@ -42,15 +45,18 @@ function Home() {
           <div className="container">
             <div className="row align-items-center">
               {/* Text Column (Left) */}
-              <div className="col-md-6">
+              <div className="col-md-6 pb-3">
                 <h2 className="text-start mb-4" style={{ fontWeight: "bold" }}>
                   Location & Hours
                 </h2>
                 <p style={{ fontSize: "1.2rem" }}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Velit commodi neque quis eligendi ducimus.davadvQVE
+                  8061 Snouffer School Rd, Gaithersburg, MD 20879 Located behind
+                  the car dealership.
                 </p>
-                <p style={{ fontSize: "1.2rem" }}>Lorem ipsum dolor</p>
+                <p style={{ fontSize: "1.2rem" }}>
+                  *Appointments Only Please schedule your visit in advance to
+                  ensure availability*
+                </p>
                 <p
                   style={{
                     fontSize: "1.2rem",
@@ -62,7 +68,7 @@ function Home() {
                   {"    "}Hours of Operation:
                 </p>
                 <p style={{ fontSize: "1.2rem" }}>
-                  Monday - Friday: 9:00 AM - 5:00 PM
+                  Monday - Friday: 10:00AM - 5:00PM
                 </p>
                 <p
                   style={{
@@ -79,7 +85,7 @@ function Home() {
               </div>
 
               {/* Map Column (Right) */}
-              <div className="col-md-6">
+              <div className="col-md-6 pt-2">
                 <div
                   className="map-container"
                   style={{ width: "100%", height: "400px" }}
@@ -210,9 +216,7 @@ function Home() {
                       <li className="list-group-item">
                         <FaCheck /> {"    "}Paint Correction
                       </li>
-                      <li className="list-group-item">
-                        <FaCheck /> {"    "}Ceramic Coating
-                      </li>
+
                       <li className="list-group-item">
                         <FaCheck /> {"    "}Engine Bay Cleaning
                       </li>
@@ -307,7 +311,7 @@ function Home() {
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  Do you offer mobile detailing services?
+                  Do you offer mobile PDR?
                 </button>
               </h2>
               <div
@@ -317,8 +321,8 @@ function Home() {
                 data-bs-parent="#faqAccordion"
               >
                 <div className="accordion-body">
-                  Yes, we offer mobile detailing services. We can come to your
-                  home or workplace for added convenience.
+                  Yes, we offer mobile PDR services. We can come to your home or
+                  workplace for added convenience.
                 </div>
               </div>
             </div>
@@ -392,7 +396,10 @@ function Home() {
                   <FaCheck /> Ideal for minor dents, dings, and hail damage
                 </li>
               </ul>
-              <a href="#contact" className="btn btn-primary mt-4">
+              <a
+                href="mailto:lventura@alfarosautoshop.com"
+                className="btn btn-primary mt-4"
+              >
                 Book Now
               </a>
             </div>
@@ -410,13 +417,13 @@ function Home() {
             </p>
             <div className="text-center">
               <a
-                href="mailto:info@alfarosauto.com"
+                href="mailto:lventura@alfarosautoshop.com"
                 className="btn btn-outline-secondary btn-lg"
               >
                 Send an Email
               </a>
               <p className="mt-3">
-                or call us at <strong>(555) 123-4567</strong>
+                or call us at <strong>(301) 971-7492</strong>
               </p>
             </div>
           </div>
