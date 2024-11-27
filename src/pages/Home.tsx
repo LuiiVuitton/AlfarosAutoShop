@@ -132,7 +132,7 @@ function Home() {
         <section className="services-section py-5 bg-light">
           <div className="container">
             <h2 className="text-center display-5 fw-bold">
-              Auto Detail packages
+              Detailing Packages
             </h2>
             <div className="row mt-4">
               {/* Service1 */}
@@ -241,7 +241,7 @@ function Home() {
                         <FaCheck /> {"    "}Engine Bay Cleaning
                       </li>
                       <li className="list-group-item">
-                        <FaCheck /> {"    "}Window Cleaning
+                        <FaCheck /> {"    "}Tint Removal
                       </li>
                       <li className="list-group-item">
                         <FaCheck /> {"    "}Headlight Restoration
