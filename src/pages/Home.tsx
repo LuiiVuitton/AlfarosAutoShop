@@ -15,6 +15,8 @@ import { FaStar } from "react-icons/fa";
 
 import { FaQuestion } from "react-icons/fa";
 
+import { CiMail } from "react-icons/ci";
+
 function Home() {
   return (
     <>
@@ -49,11 +51,14 @@ function Home() {
                 <h2 className="text-start mb-4" style={{ fontWeight: "bold" }}>
                   Location & Hours
                 </h2>
-                <p style={{ fontSize: "1.2rem" }}>
-                  8061 Snouffer School Rd, Gaithersburg, MD 20879 Located behind
-                  the car dealership.
+
+                <p style={{ fontSize: "1.2rem", fontWeight: "bold" }}>
+                  8061 Snouffer School Rd, Gaithersburg, MD 20879
                 </p>
                 <p style={{ fontSize: "1.2rem" }}>
+                  Located behind the car dealership.
+                </p>
+                <p style={{ fontSize: "1.2rem", color: "red" }}>
                   *Appointments Only Please schedule your visit in advance to
                   ensure availability*
                 </p>
@@ -82,6 +87,21 @@ function Home() {
                   Phone Number:
                 </p>
                 <p style={{ fontSize: "1.2rem" }}>301-971-7492</p>
+
+                <p
+                  style={{
+                    fontSize: "1.2rem",
+                    fontWeight: "bold",
+                    marginTop: "20px",
+                  }}
+                >
+                  <CiMail />
+                  {"    "}
+                  Email:
+                </p>
+                <p style={{ fontSize: "1.2rem" }}>
+                  lventura@alfarosautoshop.com
+                </p>
               </div>
 
               {/* Map Column (Right) */}
